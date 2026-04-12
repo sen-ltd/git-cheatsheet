@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git Cheatsheet</title>
+  <meta name="description" content="60+ Git commands organized by category with fuzzy search. Bilingual JP/EN descriptions." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <h1 id="site-title">Git Cheatsheet</h1>
+        <p id="site-subtitle">60+ commands organized by category with fuzzy search</p>
+      </div>
+      <div class="header-controls">
+        <button id="lang-toggle" class="ctrl-btn">日本語</button>
+        <button id="theme-toggle" class="ctrl-btn">Light mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="search-bar-wrap">
+      <div class="search-icon" aria-hidden="true">⌕</div>
+      <input
+        id="search"
+        type="search"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Search commands… (e.g. staged, reset, rebase)"
+        aria-label="Search Git commands"
+      />
+      <span id="command-count" class="command-count"></span>
+    </div>
+
+    <nav id="category-nav" class="category-nav" aria-label="Filter by category"></nav>
+
+    <!-- Daily workflow section -->
+    <section id="daily-section" class="daily-section">
+      <div class="section-header">
+        <span class="section-icon">⚡</span>
+        <div>
+          <h2 id="daily-title">Daily Workflow</h2>
+          <p id="daily-desc">Commands developers use every single day</p>
+        </div>
+      </div>
+      <div class="cards-grid"></div>
+    </section>
+
+    <!-- No results message -->
+    <div id="no-results" class="no-results" hidden>
+      <div class="no-results-icon">🔍</div>
+      <p class="no-results-title">No commands found</p>
+      <p class="no-results-hint">Try a different search term</p>
+    </div>
+
+    <!-- Main results -->
+    <div id="results-section" class="results-section"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="https://github.com/sen-ltd/git-cheatsheet" target="_blank" rel="noopener">GitHub</a>
+      · Built by <a href="https://sen.ltd" target="_blank" rel="noopener">SEN LLC</a>
+    </p>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
