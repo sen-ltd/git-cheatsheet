@@ -33,3 +33,10 @@ npm test
 ## ライセンス
 
 MIT. See [LICENSE](./LICENSE).
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/git-cheatsheet/
+- 📝 dev.to: https://dev.to/sendotltd/a-git-cheatsheet-with-fuzzy-search-over-82-commands-1ljd
+<!-- /sen-publish:links -->
